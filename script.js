@@ -48,7 +48,23 @@ $(function () {
 });
 
 
+// Clock //
 
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  h = h % 12;
+  h = h ? h : 12;
+  m = checkTime(m);
+  document.getElementById('time-s').innerHTML =
+  h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
 
 //desktop open and close windows
 
@@ -117,5 +133,4 @@ $(document).ready(function(){
  $(document).mousemove(function (e) {
             $(".pointer").css({ left: e.pageX, top: e.pageY });
         });
-
 
