@@ -276,9 +276,15 @@ div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, 
 }
 
 #draggable1{
-  width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
+
+@media screen and (max-width: 800px) {
+  #draggable1{
+    width: 100%;
+    max-width: 100%;
+  }
+  }
 
 .window > .content {
   overflow: scroll;
