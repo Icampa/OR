@@ -226,39 +226,39 @@ div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, 
 }
 
 #draggable2{
-  top:267px;
-  left: 430px;
-  z-index: 5;
+  top:283px;
+  left: 540px;
+  z-index: 13;
 }
 
 #draggable3{
-  top:455px;
-  left: 88px;
-  z-index: 9;
+  top:497px;
+  left: 200px;
+  z-index: 12;
 }
 
 #draggable4{
   top:196px;
-  left: 243px;
-  z-index: 11;
+  left: 298px;
+  z-index: 10;
 }
 
 #draggable5{
-  top: 187px;
-  left: 727px;
-  z-index: 6;
+  top: 196px;
+  left: 819px;
+  z-index: 14;
 }
 
 #draggable6{
-  top:20px;
-  left: 141px;
-  z-index: 7;
+  top:12px;
+  left: 99px;
+  z-index: 9;
 }
 
 #draggable7{
-  top:240px;
-  left: 38px;
-  z-index: 8;
+  top:366px;
+  left: 56px;
+  z-index: 11;
 }
 
 
