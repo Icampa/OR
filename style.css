@@ -52,7 +52,15 @@ p {
   right:40px;
 }
 
-
+#time {
+  float:right;
+  line-height:28px;
+  font-size:12px;
+  font-weight:700;
+  padding-right:10px;
+  padding-left:10px;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
 
 /* --------------------------------------Start Menu-------------------------------------- */
 
@@ -430,9 +438,3 @@ img#logo-mobile{
   position: absolute;
   top: 40%;
 }
-
-
-
-
-
-
