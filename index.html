@@ -619,19 +619,8 @@
 
     <div class="content">
       
-    <div id="twitch-embed"></div>
-
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        channel: "orangeradio",
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-        parent: ["icampa.github.io/or/", "github.com"]
-      });
-    </script>
+      <div style="padding: 56.25% 0px 0px; position: relative;">
+        <iframe src="https://player.twitch.tv/?autoplay=false&channel=orangeradio&parent=icampa.github.io" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="auto"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Twitch embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 
     </div>
 
