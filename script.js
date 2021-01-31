@@ -119,7 +119,3 @@ $(document).ready(function(){
         });
 
 
-new Twitch.Player("twitch-embed", {
-  channel: "orangeradio",
-  parent: ["https://icampa.github.io/or/", "2094822009-atari-embeds.googleusercontent.com"],
-});
