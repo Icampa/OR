@@ -400,6 +400,10 @@ textarea, input{
   border-color: #F16622;
 }
 
+#input{
+  width: 100%;
+}
+
 .archive{
   display: grid;
   grid-template-columns: 60% auto auto;
