@@ -1,9 +1,18 @@
+
+@font-face {
+    font-family: 'w95fa';
+    src: url('assets/w95fa.woff2') format('woff2'),
+         url('assets/w95fa.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Courier, sans-serif;
+  font-family: 'w95fa';
   font-weight: 300;
 }
 
@@ -22,10 +31,13 @@ a{
 }
 
 p {
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
-  font-size: 11px;
+  font-size: .85em;
   display: inline;
+  letter-spacing: .2px;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,15 +67,12 @@ p {
 #time {
   float:right;
   line-height:28px;
-  font-size:12px;
-  font-weight:700;
   padding-right:10px;
   padding-left:10px;
   box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
 }
 
 /* --------------------------------------Start Menu-------------------------------------- */
-
 
 .dock {
   background: #c0c0c0;
@@ -74,6 +83,8 @@ p {
   border-top: 2px solid #efefef;
   padding: 3px;
   z-index: 1000;
+  font-size: 1.1em;
+  letter-spacing: .2px
 }
 
 .start-btn {
@@ -222,92 +233,16 @@ p {
   font-family: arial, helvetica !important;
 }
 
-div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, div#draggable6, div#draggable7, div.window {
-  position: absolute;
-  overflow: auto;
-}
-
-#draggable1{
-  top:42px;
-  left: 462px;
-  z-index: 7;
-}
-
-#draggable2{
-  top:282px;
-  left: 703px;
-  z-index: 9;
-}
-
-#draggable3{
-  top:524px;
-  left: 359px;
-  z-index: 11;
-}
-
-#draggable4{
-  top:256px;
-  left: 269px;
-  z-index: 13;
-}
-
-#draggable5{
-  top: 148px;
-  left: 1079px;
-  z-index: 10;
-}
-
-#draggable6{
-  top:12px;
-  left: 99px;
-  z-index: 8;
-}
-
-#draggable7{
-  top:412px;
-  left: 34px;
-  z-index: 14;
-}
-
-
-@media screen and (max-width: 800px) {
-  div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, div#draggable6, div#draggable7, div.window {
-    position: relative;
-    top: auto;
-    left: auto;
-    display: none;
-  }
-}
-
-.draggable{
-  overflow: auto;
-}
-
-#draggable1{
-  max-width: 300px;
-}
-
-@media screen and (max-width: 800px) {
-  #draggable1{
-    width: 100%;
-    max-width: 100%;
-  }
-  }
-
 .window > .content {
   overflow: scroll;
   flex-grow: 1;
   padding: 0px;
 }
 
-#text{
-  padding: 10px;
-}
-
 .window{
-  min-width: 300px;
+  min-width: 100px;
   min-height: 100px;
-  font-size: 12px;
+  font-size: 1em;
   background-color: #BDBDBD;
   position: absolute;
   padding: 3px;
@@ -318,6 +253,7 @@ div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, 
 div.content{
   background-color: #fff;
   hyphens: auto;
+  font-family: sans-serif;
 }
 
 .window .top-bar, .top-bar {
@@ -331,10 +267,6 @@ div.content{
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-}
-
-.topbar{
-  
 }
 
 .window .toolbar, .toolbar {
@@ -362,8 +294,106 @@ div.content{
   padding: 2px;
 }
 
+.title{
+  font-weight: 600;
+  color: #000;
+}
+
+#text{
+  padding: 10px;
+}
+
+/* --------------------------------------Draggables-------------------------------------- */
+
+.draggable{
+  overflow: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, div#draggable6, div#draggable7, div.window {
+  position: absolute;
+  overflow: auto;
+}
+
+#draggable1{
+  top:108px;
+  left: 310px;
+  z-index: 7;
+  max-width: 240px;
+}
+
+@media screen and (max-width: 800px) {
+  #draggable1{
+    width: 100%;
+    max-width: 100%;
+  }
+  }
+
+#draggable2{
+  top:409px;
+  left: 586px;
+  z-index: 18;
+  max-height: 300px;
+}
+
+#draggable3{
+  top:340px;
+  left: 65px;
+  z-index: 11;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  #draggable3{
+    width: 100%;
+    max-width: 100%;
+  }
+  }
+
+#draggable4{
+  top:184px;
+  left: 645px;
+  z-index: 23;
+}
+
+#draggable5{
+  top: 162px;
+  left: 1013px;
+  z-index: 19;
+}
+
+#draggable6{
+  top:42px;
+  left: 63px;
+  z-index: 25;
+  width: auto;
+  height: auto;
+}
+
+#draggable7{
+  top:450px;
+  left: 229px;
+  z-index: 21;
+  min-height: 100px;
+  min-width: 300px;
+}
+
+
+@media screen and (max-width: 800px) {
+  div#draggable1, div#draggable2, div#draggable3, div#draggable4, div#draggable5, div#draggable6, div#draggable7, div.window {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: none;
+  }
+}
+
 form{
   padding: 10px;
+  font-size: .85em;
+  font-family: sans-serif;
 }
 
 textarea, input{
@@ -407,9 +437,14 @@ div.line{
 
 hr{
   border-color: transparent;
-  border-bottom: 1px solid #F16622;
-  
+  border-bottom: 1px solid #F16622; 
 }
+
+#merch{
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
 
 /* --------------------------------------Mobile-------------------------------------- */
 
