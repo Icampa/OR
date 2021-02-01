@@ -125,9 +125,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
 //cursor orange
 
  $(document).mousemove(function (e) {
